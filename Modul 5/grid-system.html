@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Grid System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .box {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-5">
+    <h1 class="text-center mb-5">Demo Bootstrap Grid System</h1>
+    
+    <!-- Contoh 1: 2 Kolom Sama Besar -->
+    <h3>1. Dua Kolom (6 + 6 = 12)</h3>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="box">Kolom 1<br>(col-md-6)</div>
+        </div>
+        <div class="col-md-6">
+            <div class="box">Kolom 2<br>(col-md-6)</div>
+        </div>
+    </div>
+    
+    <!-- Contoh 2: 3 Kolom Sama Besar -->
+    <h3>2. Tiga Kolom (4 + 4 + 4 = 12)</h3>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="box">Kolom 1<br>(col-md-4)</div>
+        </div>
+        <div class="col-md-4">
+            <div class="box">Kolom 2<br>(col-md-4)</div>
+        </div>
+        <div class="col-md-4">
+            <div class="box">Kolom 3<br>(col-md-4)</div>
+        </div>
+    </div>
+    
+    <!-- Contoh 3: 4 Kolom -->
+    <h3>3. Empat Kolom (3 + 3 + 3 + 3 = 12)</h3>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="box">Kolom 1<br>(col-md-3)</div>
+        </div>
+        <div class="col-md-3">
+            <div class="box">Kolom 2<br>(col-md-3)</div>
+        </div>
+        <div class="col-md-3">
+            <div class="box">Kolom 3<br>(col-md-3)</div>
+        </div>
+        <div class="col-md-3">
+            <div class="box">Kolom 4<br>(col-md-3)</div>
+        </div>
+    </div>
+    
+    <!-- Contoh 4: Kolom Tidak Sama -->
+    <h3>4. Kolom Tidak Sama (8 + 4 = 12)</h3>
+    <div class="row">
+        <div class="col-md-8">
+            <div class="box">Kolom Lebar<br>(col-md-8)</div>
+        </div>
+        <div class="col-md-4">
+            <div class="box">Kolom Sempit<br>(col-md-4)</div>
+        </div>
+    </div>
+    
+    <!-- Contoh 5: Responsive Grid -->
+    <h3>5. Responsive Grid (Berubah di Mobile)</h3>
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="box">Item 1<br>(col-12 col-md-6 col-lg-4)</div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="box">Item 2<br>(col-12 col-md-6 col-lg-4)</div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="box">Item 3<br>(col-12 col-md-6 col-lg-4)</div>
+        </div>
+    </div>
+    
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
