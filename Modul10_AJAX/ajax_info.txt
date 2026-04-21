@@ -1,0 +1,8 @@
+<h3>Konten dari Server</h3>
+<p>Ini adalah respons yang dikirimkan oleh server ketika tombol ditekan.</p>
+<ul>
+  <li>NIM: 2311102065</li>
+  <li>Nama: Yasvin Syahgana</li>
+  <li>Status: Permintaan AJAX berhasil</li>
+</ul>
+<p>AJAX jQuery bekerja dengan baik jika Anda melihat konten ini setelah tombol diklik.</p>
