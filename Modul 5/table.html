@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Table</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h1 class="text-center mb-5">Demo Bootstrap Table</h1>
+    
+    <!-- Tabel 1: Tabel Dasar dengan Hover -->
+    <h3>1. Tabel Data Mahasiswa (table-hover)</h3>
+    <table class="table table-hover">
+        <thead class="table-dark">
+            <tr>
+                <th scope="col">No</th>
+                <th scope="col">NIM</th>
+                <th scope="col">Nama</th>
+                <th scope="col">Jurusan</th>
+                <th scope="col">IPK</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>2026001</td>
+                <td>Ahmad Rizki</td>
+                <td>Teknik Informatika</td>
+                <td>3.75</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>2026002</td>
+                <td>Siti Nurhaliza</td>
+                <td>Sistem Informasi</td>
+                <td>3.82</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>2026003</td>
+                <td>Budi Santoso</td>
+                <td>Teknik Komputer</td>
+                <td>3.65</td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td>2026004</td>
+                <td>Dewi Lestari</td>
+                <td>Teknik Informatika</td>
+                <td>3.90</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <!-- Tabel 2: Tabel dengan Striped dan Bordered -->
+    <h3>2. Tabel Jadwal Kuliah (table-striped table-bordered)</h3>
+    <table class="table table-striped table-bordered">
+        <thead class="table-primary">
+            <tr>
+                <th scope="col">Hari</th>
+                <th scope="col">Jam</th>
+                <th scope="col">Mata Kuliah</th>
+                <th scope="col">Ruang</th>
+                <th scope="col">Dosen</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Senin</td>
+                <td>08:00 - 10:00</td>
+                <td>Pemrograman Web</td>
+                <td>R.301</td>
+                <td>Pak Andi</td>
+            </tr>
+            <tr>
+                <td>Selasa</td>
+                <td>10:00 - 12:00</td>
+                <td>Basis Data</td>
+                <td>R.205</td>
+                <td>Bu Siti</td>
+            </tr>
+            <tr>
+                <td>Rabu</td>
+                <td>13:00 - 15:00</td>
+                <td>Struktur Data</td>
+                <td>R.301</td>
+                <td>Pak Budi</td>
+            </tr>
+            <tr>
+                <td>Kamis</td>
+                <td>08:00 - 10:00</td>
+                <td>Jaringan Komputer</td>
+                <td>Lab. Jaringan</td>
+                <td>Pak Doni</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <!-- Tabel 3: Tabel dengan Warna Status -->
+    <h3>3. Tabel Status Pembayaran (dengan warna)</h3>
+    <table class="table table-bordered">
+        <thead class="table-success">
+            <tr>
+                <th scope="col">No</th>
+                <th scope="col">NIM</th>
+                <th scope="col">Nama</th>
+                <th scope="col">Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="table-success">
+                <th scope="row">1</th>
+                <td>2026001</td>
+                <td>Ahmad Rizki</td>
+                <td>Lunas ✓</td>
+            </tr>
+            <tr class="table-success">
+                <th scope="row">2</th>
+                <td>2026002</td>
+                <td>Siti Nurhaliza</td>
+                <td>Lunas ✓</td>
+            </tr>
+            <tr class="table-warning">
+                <th scope="row">3</th>
+                <td>2026003</td>
+                <td>Budi Santoso</td>
+                <td>Pending ⏳</td>
+            </tr>
+            <tr class="table-danger">
+                <th scope="row">4</th>
+                <td>2026004</td>
+                <td>Dewi Lestari</td>
+                <td>Belum Lunas ✗</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <!-- Tabel 4: Tabel Responsif -->
+    <h3>4. Tabel Responsif (table-responsive)</h3>
+    <p class="text-muted">Resize browser untuk melihat scroll horizontal</p>
+    <div class="table-responsive">
+        <table class="table table-striped table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th>No</th>
+                    <th>NIM</th>
+                    <th>Nama Lengkap</th>
+                    <th>Email</th>
+                    <th>No. Telepon</th>
+                    <th>Alamat</th>
+                    <th>Jurusan</th>
+                    <th>Semester</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2026001</td>
+                    <td>Ahmad Rizki Pratama</td>
+                    <td>ahmad@email.com</td>
+                    <td>081234567890</td>
+                    <td>Jl. Merdeka No. 123</td>
+                    <td>Teknik Informatika</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>2026002</td>
+                    <td>Siti Nurhaliza</td>
+                    <td>siti@email.com</td>
+                    <td>081234567891</td>
+                    <td>Jl. Sudirman No. 456</td>
+                    <td>Sistem Informasi</td>
+                    <td>5</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

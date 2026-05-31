@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Image</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2 class="text-center mb-5">Demo Bootstrap Image</h2>
+    
+    <!-- 1. Image Fluid (Responsif) -->
+    <h4>1. Gambar Responsif (img-fluid)</h4>
+    <p class="text-muted">Resize browser, gambar akan menyesuaikan lebar layar.</p>
+    <img src="https://picsum.photos/800/300" class="img-fluid" alt="Gambar Responsif">
+    <hr>
+    
+    <!-- 2. Image Thumbnail -->
+    <h4>2. Thumbnail Style (img-thumbnail)</h4>
+    <img src="https://picsum.photos/200/200" class="img-thumbnail" alt="Thumbnail">
+    <hr>
+    
+    <!-- 3. Rounded Shapes -->
+    <h4>3. Bentuk Sudut Gambar</h4>
+    <div class="row text-center">
+        <div class="col-md-4">
+            <img src="https://picsum.photos/150/150" class="rounded" alt="Rounded">
+            <p class="mt-2">rounded</p>
+        </div>
+        <div class="col-md-4">
+            <img src="https://picsum.photos/150/150" class="rounded-circle" alt="Circle">
+            <p class="mt-2">rounded-circle</p>
+        </div>
+        <div class="col-md-4">
+            <img src="https://picsum.photos/200/100" class="rounded-pill" alt="Pill">
+            <p class="mt-2">rounded-pill</p>
+        </div>
+    </div>
+    
+    <!-- 4. Image dalam Card (Contoh Penggunaan Nyata) -->
+    <h4 class="mt-4">4. Gambar dalam Komponen (Contoh Card)</h4>
+    <div class="card" style="width: 18rem;">
+        <img src="https://picsum.photos/300/200" class="card-img-top" alt="Card Image">
+        <div class="card-body">
+            <h5 class="card-title">Judul Card</h5>
+            <p class="card-text">Contoh penggunaan gambar di dalam komponen Bootstrap Card.</p>
+            <a href="#" class="btn btn-primary">Lihat Detail</a>
+        </div>
+    </div>
+    
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

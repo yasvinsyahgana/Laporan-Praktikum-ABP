@@ -1,0 +1,61 @@
+cd<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AJAX jQuery Demo</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      max-width: 700px;
+      margin: auto;
+      line-height: 1.6;
+    }
+    button {
+      padding: 10px 16px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    #demo {
+      margin-top: 18px;
+      padding: 14px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <h2>AJAX dengan jQuery</h2>
+  <p>Tekan tombol di bawah untuk mengambil konten dari server menggunakan AJAX.</p>
+  <button type="button" id="changeBtn">Change Content</button>
+  <div id="demo">
+    <p>Konten hasil AJAX akan ditampilkan di sini.</p>
+  </div>
+
+  <script>
+    $(document).ready(function () {
+      $('#changeBtn').click(function () {
+        $.ajax({
+          url: '/ajax_info',
+          type: 'GET',
+          dataType: 'html',
+          timeout: 5000,
+          success: function (result) {
+            $('#demo').html(result);
+          },
+          error: function (xhr, status, error) {
+            $('#demo').html('<strong>Error:</strong> ' + error);
+            console.error('AJAX error:', status, error);
+          },
+          complete: function (xhr, status) {
+            console.log('Request completed with status: ' + status);
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
